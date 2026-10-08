@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de João Lucas, estudante de TI no COTEMIG. Projetos, habilidades e contato.">
+  <title>João Lucas | Portfólio</title>
+  <link rel="icon" href="assets/coracao.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#inicio">Pular para o conteúdo</a>
+
+  <!-- HEADER: cabeçalho. UL e LI: lista do menu. -->
+  <header class="cabecalho">
+    <div class="container topo">
+      <a class="marca" href="#inicio" aria-label="João Lucas, início">
+        <img class="icone-vscode" src="assets/vscode.png" alt="">
+        <span>JOÃO LUCAS</span>
+      </a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="botao botao-tema" id="botao-tema" type="button" aria-pressed="false">Modo claro</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="inicio container" id="inicio" aria-labelledby="titulo-inicio">
+      <div class="apresentacao">
+        <span class="etiqueta">ESTUDANTE DE TI</span>
+        <h1 id="titulo-inicio">JOÃO<br><span class="destaque">LUCAS</span></h1>
+        <p class="subtitulo">COTEMIG • COLÉGIO E FACULDADE</p>
+        <p>Construindo meu caminho na tecnologia, um projeto de cada vez.</p>
+        <div class="acoes">
+          <a class="botao principal" href="#projetos">Ver projetos</a>
+          <a class="botao" href="https://github.com/jlpinheiro-1" target="_blank" rel="noopener noreferrer">Meu GitHub ↗</a>
+        </div>
+        <a class="navegacao-coracao" href="#sobre" aria-label="Descer para Sobre mim">
+          <img src="assets/coracao.png" alt=""><span>CONTINUAR ↓</span>
+        </a>
+      </div>
+      <div class="foto-moldura">
+        <img class="foto-perfil" src="assets/perfil.png" alt="Foto de João Lucas" width="1535" height="1536">
+        <span class="legenda-foto">* O próximo passo começa aqui.</span>
+      </div>
+    </section>
+
+    <section class="secao container" id="sobre" aria-labelledby="titulo-sobre">
+      <h2 id="titulo-sobre"><img class="icone-vscode" src="assets/vscode.png" alt=""> SOBRE MIM</h2>
+      <div class="caixa sobre-conteudo">
+        <span class="etiqueta">PRAZER, JOÃO LUCAS.</span>
+        <p>Sou estudante do 2º ano do ensino médio no COTEMIG Barroca, cursando TI. Tenho interesse em desenvolvimento e hardware e busco aprender na prática, criando projetos e trabalhando com computadores.</p>
+        <p>Minhas habilidades incluem montagem de PC, programação em C# e uso do Pacote Office. Quero desenvolver meus conhecimentos e ganhar experiência na área de tecnologia.</p>
+      </div>
+    </section>
+
+    <section class="secao container" id="habilidades" aria-labelledby="titulo-habilidades">
+      <h2 id="titulo-habilidades"><img class="icone-vscode" src="assets/vscode.png" alt=""> HABILIDADES</h2>
+      <!-- GRID no CSS organiza estas três habilidades. -->
+      <ul class="grade-habilidades">
+        <li class="caixa habilidade"><span class="numero">01</span><h3>Montagem de PC</h3><p>Montagem de computadores e organização dos componentes.</p></li>
+        <li class="caixa habilidade"><span class="numero">02</span><h3>C#</h3><p>Lógica de programação e desenvolvimento de atividades em C#.</p></li>
+        <li class="caixa habilidade"><span class="numero">03</span><h3>Pacote Office</h3><p>Documentos no Word, apresentações no PowerPoint e planilhas no Excel.</p></li>
+      </ul>
+    </section>
+
+    <section class="secao container" id="projetos" aria-labelledby="titulo-projetos">
+      <h2 id="titulo-projetos"><img class="icone-vscode" src="assets/vscode.png" alt=""> PROJETOS</h2>
+      <p class="descricao-secao">Explore meus trabalhos. Use os corações para passar para o lado.</p>
+      <div class="carrossel" role="region" aria-roledescription="carrossel" aria-label="Meus projetos">
+        <button class="seta anterior" id="anterior" type="button" aria-label="Projeto anterior" hidden><img src="assets/coracao.png" alt=""><span aria-hidden="true">←</span></button>
+        <!-- OL: lista ordenada dos projetos. Todos aparecem se o JS estiver desativado. -->
+        <ol class="lista-projetos">
+          <li class="projeto">
+            <div class="visual-projeto" aria-hidden="true"><span class="simbolo">H<span class="indice">1</span></span><span class="rotulo-visual">TABELA PERIÓDICA</span></div>
+            <div class="texto-projeto"><span class="categoria">PROJETO WEB</span><h3>Tabela Periódica</h3><p>Projeto escolar de uma tabela periódica em uma página web.</p><div class="acoes"><a class="botao" href="https://jlpinheiro-1.github.io/TabelaPeriodica2c1/" target="_blank" rel="noopener noreferrer">Abrir projeto ↗</a><button class="botao detalhes" data-projeto="0" type="button" hidden>Detalhes</button></div></div>
+          </li>
+          <li class="projeto">
+            <div class="visual-projeto" aria-hidden="true"><span class="simbolo estrela">✦</span><span class="rotulo-visual">SUSU</span></div>
+            <div class="texto-projeto"><span class="categoria">PROJETO WEB</span><h3>Landing Page SUSU</h3><p>Uma landing page desenvolvida como atividade de criação de sites.</p><div class="acoes"><a class="botao" href="https://jlpinheiro-1.github.io/landingpageSUSU/" target="_blank" rel="noopener noreferrer">Abrir projeto ↗</a><button class="botao detalhes" data-projeto="1" type="button" hidden>Detalhes</button></div></div>
+          </li>
+          <li class="projeto">
+            <div class="visual-projeto" aria-hidden="true"><div class="desenho-grid"><span></span><span></span><span></span><span></span></div><span class="rotulo-visual">GRID</span></div>
+            <div class="texto-projeto"><span class="categoria">PROJETO WEB</span><h3>Atividade Grid</h3><p>Atividade de organização de elementos e construção de um layout com CSS Grid.</p><div class="acoes"><a class="botao" href="https://jlpinheiro-1.github.io/atividdadegrid/" target="_blank" rel="noopener noreferrer">Abrir projeto ↗</a><button class="botao detalhes" data-projeto="2" type="button" hidden>Detalhes</button></div></div>
+          </li>
+          <li class="projeto">
+            <div class="visual-projeto"><img class="foto-pc" src="assets/manutencao-pc.png" alt="Computador com gabinete branco aberto, mostrando seus componentes" width="1080" height="1440" loading="lazy"></div>
+            <div class="texto-projeto"><span class="categoria">HARDWARE</span><h3>Manutenção de PC</h3><p>Registro de um trabalho com computador e seus componentes.</p><div class="acoes"><button class="botao detalhes" data-projeto="3" type="button" hidden>Ver detalhes</button></div></div>
+          </li>
+        </ol>
+        <button class="seta proximo" id="proximo" type="button" aria-label="Próximo projeto" hidden><img src="assets/coracao.png" alt=""><span aria-hidden="true">→</span></button>
+      </div>
+      <div class="contador" id="contador" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+    </section>
+
+    <section class="secao container" id="contato" aria-labelledby="titulo-contato">
+      <h2 id="titulo-contato"><img class="icone-vscode" src="assets/vscode.png" alt=""> CONTATO</h2>
+      <div class="grade-contato">
+        <div class="informacoes-contato"><span class="etiqueta">VAMOS CONVERSAR?</span><p>Entre em contato para falar sobre projetos e oportunidades.</p><ul><li><span>Email</span><a href="mailto:joaolucasbasquete2026@gmail.com">joaolucasbasquete2026@gmail.com</a></li><li><span>Telefone</span><a href="tel:+5531984319805">+55 (31) 98431-9805</a></li><li><span>GitHub</span><a href="https://github.com/jlpinheiro-1" target="_blank" rel="noopener noreferrer">github.com/jlpinheiro-1 ↗</a></li></ul></div>
+        <form class="caixa formulario" id="formulario">
+          <div class="campo"><label for="nome">Nome</label><input id="nome" name="nome" type="text" autocomplete="name" minlength="2" maxlength="80" required placeholder="Seu nome"></div>
+          <div class="linha-campos"><div class="campo"><label for="telefone">Telefone</label><input id="telefone" name="telefone" type="tel" autocomplete="tel" inputmode="tel" maxlength="19" required placeholder="+55 (31) 99999-9999" aria-describedby="ajuda-telefone"><span id="ajuda-telefone" class="ajuda">Informe DDD e número brasileiro.</span></div><div class="campo"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" maxlength="120" required placeholder="voce@email.com"></div></div>
+          <div class="campo"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" rows="5" minlength="10" maxlength="2000" required placeholder="Escreva sua mensagem"></textarea></div>
+          <p class="ajuda">O formulário prepara uma mensagem para abrir no seu aplicativo de email. O envio é confirmado por você nesse aplicativo.</p>
+          <button class="botao principal" id="preparar-email" type="submit" disabled>Preparar email</button>
+          <noscript><p>Ative o JavaScript para usar o formulário ou envie um email pelo link ao lado.</p></noscript>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape"><div class="container rodape-conteudo"><span>JOÃO LUCAS • ESTUDANTE DE TI</span><a href="mailto:joaolucasbasquete2026@gmail.com">joaolucasbasquete2026@gmail.com</a><a href="tel:+5531984319805">+55 (31) 98431-9805</a><a class="navegacao-coracao" href="#inicio" aria-label="Voltar ao início"><img src="assets/coracao.png" alt=""><span>↑ TOPO</span></a></div></footer>
+
+  <!-- Modal usado pelos projetos e pela preparação de email. -->
+  <dialog class="modal" id="modal" aria-labelledby="titulo-modal" aria-describedby="texto-modal"><div class="modal-conteudo"><span class="etiqueta">PORTFÓLIO</span><h2 id="titulo-modal"></h2><p id="texto-modal"></p><a class="botao principal" id="abrir-email" hidden>Abrir aplicativo de email</a><button class="botao" id="fechar-modal" type="button">Fechar</button></div></dialog>
+</body>
+</html>
